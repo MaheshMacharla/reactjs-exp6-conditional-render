@@ -1,12 +1,19 @@
-![WhatsApp Image 2025-09-11 at 13 17 01_dd2189e9](https://github.com/user-attachments/assets/27201839-0e43-46bc-9508-a410574a4aac)
+![WhatsApp Image 2025-09-08 at 15 34 24_47a559d6](https://github.com/user-attachments/assets/324a8e19-85a7-4e7a-9de5-120569eb0ee0)
 
 
-This form demonstrates state management in React with the useState hook and real-time updates via the onChange event. When the user types into the input field, the state updates dynamically and the current value is displayed immediately.
+## Conditional Rendering Example
 
-✨ Features Shown in Screenshot:
+This project demonstrates **conditional rendering in React with Vite**.  
+A toggle button is used to show or hide a component dynamically using React state (`useState`).
 
-A text input field connected to React state.
+### Screenshot
+Below is a screenshot of the app running on `http://localhost:5173/`:
 
-Dynamic rendering of the input value as the user types.
+![Conditional Rendering Screenshot](./WhatsApp%20Image%202025-09-08%20at%2015.34.24_a7ace5a9.jpg)
 
-Real-time UI updates using React’s re-rendering mechanism.
+### Explanation
+- When you click **Show Component**, a new component appears.  
+- When you click **Hide Component**, the component disappears.  
+- This is achieved using conditional rendering:  
+  ```jsx
+  {isVisible && <MyComponent />}
